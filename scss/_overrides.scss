@@ -1,0 +1,169 @@
+// Google Fonts
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700);
+
+$open-sans: 'Open Sans', sans-serif;
+
+$body-font-family: #777;
+$body-font-family: $open-sans, Helvetica, Arial, sans-serif;
+
+$header-font-color: #fff;
+$subhead-font-color: #2a685f;
+
+$primary-color: #f1912a;
+$secondary-color: #42b5e6;
+$hover-color: #f1912a;
+$third-color: #b2d23c;
+
+$global-radius: 10px;
+$global-rounded: 1000px;
+
+$body-font-color: #777;
+
+$shiny-edge-size: 0 0 0;
+
+$button-font-weight: 300;
+
+$button-border-width: 1px;
+$button-border-color: #fff;
+
+$button-radius: $global-radius;
+
+$inline-list-top-margin: 40;
+$inline-list-padding: 15;
+
+$inline-list-display: block;
+
+$tooltip-bg: $secondary-color;
+
+$topbar-bg-color: #fff;
+
+$topbar-height: 75px;
+
+$topbar-link-color: #777;
+$topbar-link-color-hover: #777 ;
+$topbar-link-color-active: #777;
+$topbar-link-color-active-hover: #777;
+$topbar-link-weight: 300;
+$topbar-link-font-size: rem-calc(15);
+
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+
+
+nav ul li {
+  display:inline;
+    float: right;
+    list-style-type: none;
+    padding:40px 15px;
+    font-size: 15px;
+    font-family: $body-font-family;
+    font-weight:300; 
+}
+
+a:link, a:visited {text-decoration: none; color: #777; }
+a:hover, a:active {text-decoration: none; border-bottom: 3px solid #f7d43a; }
+
+.hp-main-photo {
+    background:$primary-color url('../images/hp-main-photo.jpg') center center;
+    background-size: cover; 
+    min-height: 315px;
+    padding:75px;
+    text-align:center;
+    margin-bottom: 30px;
+    }
+
+h1{ font-family: $body-font-family;
+    color:$header-font-color;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 45px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px #777;}
+
+.button-join{
+  background: #f1912a;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: $global-radius;
+ text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding: 8px 0px;
+    font-family: $body-font-family;
+
+}
+
+.button-join:hover{color: #f1912a;
+    background: #fbdebf;}
+
+.stats {background-color:$secondary-color;
+height:150px;
+padding-top:37px;}
+
+.img-icon {float:right;
+  
+}
+
+h2{ font-family: $body-font-family;
+    color:$header-font-color;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+h3{ font-family: $body-font-family;
+    color:$header-font-color;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 300;
+     line-height: 22px;
+}
+.feature{padding:50px;}
+
+h4{ font-family:  $body-font-family;
+    color:$subhead-font-color;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.quote{ font-family: $body-font-family;
+    color: $body-font-family;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+body, p { font-family:  $body-font-family;
+    color: $body-font-family;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.img-rounded {
+  @include border-radius (15px);
+}
+
+.footer-bar {background-color: $third-color;
+  height: 50px;
+width: 100%}
+
+
+
+
+
