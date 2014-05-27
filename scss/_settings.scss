@@ -45,6 +45,9 @@
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
+
+
+
 // We use this to control font-smoothing
 // $font-smoothing: antialiased;
 
@@ -61,14 +64,21 @@
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
 
+
+
+
 // We use these to make sure border radius matches unless we want it different.
 // $global-radius: 3px;
 // $global-rounded: 1000px;
+
+
 
 // We use these to control inset shadow shiny edges and depressions.
 // $shiny-edge-size: 0 1px 0;
 // $shiny-edge-color: rgba(#fff, .5);
 // $shiny-edge-active-color: rgba(#000, .2);
+
+
 
 // $column-gutter: rem-calc(30);
 
@@ -190,6 +200,9 @@
 // $blockquote-cite-font-size: rem-calc(13);
 // $blockquote-cite-font-color: scale-color($header-font-color, $lightness: 23%);
 // $blockquote-cite-link-color: $blockquote-cite-font-color;
+
+
+
 
 // Acronym styles
 // $acronym-underline: 1px dotted #ddd;
@@ -344,6 +357,7 @@
 // $button-font-weight: normal;
 // $button-font-align: center;
 
+
 // We use these to control various hover effects.
 // $button-function-factor: -20%;
 
@@ -353,9 +367,12 @@
 // $bg: $primary-color;
 // $button-border-color: scale-color($bg, $lightness: $button-function-factor);
 
+
+
 // We use this to set the default radius used throughout the core.
 // $button-radius: $global-radius;
 // $button-round: $global-rounded;
+
 
 // We use this to set default opacity for disabled buttons.
 // $button-disabled-opacity: 0.7;
@@ -571,11 +588,15 @@
 
 // $inline-list-padding: 0;
 
+
+
 // We use this to control the overflow of the inline list.
 // $inline-list-overflow: hidden;
 
 // We use this to control the list items
 // $inline-list-display: block;
+
+
 
 // We use this to control any elments within list items
 // $inline-list-children-display: block;
@@ -1161,6 +1182,7 @@
 // $tooltip-rounded: $global-rounded;
 // $tooltip-pip-size: 5px;
 
+
 //
 // TOP BAR
 //
@@ -1171,9 +1193,14 @@
 // $topbar-bg-color: #333;
 // $topbar-bg: $topbar-bg-color;
 
+
+
 // Height and margin
 // $topbar-height: 45px;
 // $topbar-margin-bottom: 0;
+
+
+
 
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: normal;
@@ -1203,6 +1230,8 @@
 // $topbar-link-font-family: $body-font-family;
 // $topbar-link-text-transform: none;
 // $topbar-link-padding: $topbar-height / 3;
+
+
 
 // $topbar-button-font-size: 0.75rem;
 // $topbar-button-top: 7px;
