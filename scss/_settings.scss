@@ -45,7 +45,18 @@
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
+<<<<<<< HEAD
 
+=======
+// Google Fonts
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700);
+
+// Font Variables
+$open-sans: 'Open Sans', sans-serif;
+
+$body-font-color: #777;
+$body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+>>>>>>> e2a20f68cb9e679391a05b7d5b2349efbab62a36
 
 
 // We use this to control font-smoothing
@@ -64,21 +75,36 @@
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
 
+<<<<<<< HEAD
 
+=======
+ $primary-color: #f1912a;
+ $secondary-color: #42b5e6;
+ $third-color: #b232ec;
+>>>>>>> e2a20f68cb9e679391a05b7d5b2349efbab62a36
 
 
 // We use these to make sure border radius matches unless we want it different.
 // $global-radius: 3px;
 // $global-rounded: 1000px;
 
+<<<<<<< HEAD
 
+=======
+$global-radius: 10px;
+$global-rounded: 1000px;
+>>>>>>> e2a20f68cb9e679391a05b7d5b2349efbab62a36
 
 // We use these to control inset shadow shiny edges and depressions.
 // $shiny-edge-size: 0 1px 0;
 // $shiny-edge-color: rgba(#fff, .5);
 // $shiny-edge-active-color: rgba(#000, .2);
 
+<<<<<<< HEAD
 
+=======
+$shiny-edge-size: 0 0 0;
+>>>>>>> e2a20f68cb9e679391a05b7d5b2349efbab62a36
 
 // $column-gutter: rem-calc(30);
 
@@ -357,7 +383,6 @@
 // $button-font-weight: normal;
 // $button-font-align: center;
 
-
 // We use these to control various hover effects.
 // $button-function-factor: -20%;
 
@@ -366,8 +391,6 @@
 // $button-border-style: solid;
 // $bg: $primary-color;
 // $button-border-color: scale-color($bg, $lightness: $button-function-factor);
-
-
 
 // We use this to set the default radius used throughout the core.
 // $button-radius: $global-radius;
@@ -588,16 +611,11 @@
 
 // $inline-list-padding: 0;
 
-
-
 // We use this to control the overflow of the inline list.
 // $inline-list-overflow: hidden;
 
 // We use this to control the list items
 // $inline-list-display: block;
-
-
-
 // We use this to control any elments within list items
 // $inline-list-children-display: block;
 
@@ -1182,6 +1200,11 @@
 // $tooltip-rounded: $global-rounded;
 // $tooltip-pip-size: 5px;
 
+<<<<<<< HEAD
+=======
+$tooltip-bg: $secondary-color;
+
+>>>>>>> e2a20f68cb9e679391a05b7d5b2349efbab62a36
 
 //
 // TOP BAR
@@ -1192,16 +1215,9 @@
 // Background color for the top bar
 // $topbar-bg-color: #333;
 // $topbar-bg: $topbar-bg-color;
-
-
-
 // Height and margin
 // $topbar-height: 45px;
 // $topbar-margin-bottom: 0;
-
-
-
-
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: normal;
 // $topbar-title-font-size: rem-calc(17);
@@ -1230,9 +1246,6 @@
 // $topbar-link-font-family: $body-font-family;
 // $topbar-link-text-transform: none;
 // $topbar-link-padding: $topbar-height / 3;
-
-
-
 // $topbar-button-font-size: 0.75rem;
 // $topbar-button-top: 7px;
 
