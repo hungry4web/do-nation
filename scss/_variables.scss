@@ -1,0 +1,38 @@
+// Google Fonts
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700);
+
+$open-sans: 'Open Sans',sans-serif;
+$body-font-family: $open-sans,Helvetica,Arial,sans-serif;
+$body-font-color: #777;
+$header-font-color: #fff;
+$subhead-font-color: #2a685f;
+
+$primary-color: #f1912a;
+$secondary-color: #42b5e6;
+$hover-color: #f1912a;
+$third-color: #b2d23c;
+
+$global-radius: 10px;
+$global-rounded: 1000px;
+
+$shiny-edge-size: 0 0 0;
+
+$button-font-weight: 300;
+$button-border-width: 1px;
+$button-border-color: #fff;
+$button-radius: $global-radius;
+
+$inline-list-top-margin: 40;
+$inline-list-padding: 15;
+$inline-list-display: block;
+
+$tooltip-bg: $secondary-color;
+
+$topbar-bg-color: #fff;
+$topbar-height: 75px;
+$topbar-link-color: #777;
+$topbar-link-color-hover: #777 ;
+$topbar-link-color-active: #777;
+$topbar-link-color-active-hover: #777;
+$topbar-link-weight: 300;
+$topbar-link-font-size: rem-calc(15);
