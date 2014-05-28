@@ -3832,10 +3832,10 @@ label.error {
 
 /* line 52, ../bower_components/foundation/scss/foundation/components/_inline-lists.scss */
 .inline-list {
-  margin: 40 auto 1.0625rem auto;
+  margin: 40px auto 1.0625rem auto;
   margin-left: -1.375rem;
   margin-right: 0;
-  padding: 15;
+  padding: 15px;
   list-style: none;
   overflow: hidden;
 }
@@ -5791,14 +5791,14 @@ meta.foundation-mq-topbar {
 /* line 136, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .fixed.expanded:not(.top-bar) .top-bar-section {
   z-index: 98;
-  margin-top: 75px;
+  margin-top: 131px;
 }
 
 /* line 143, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar {
   overflow: hidden;
-  height: 75px;
-  line-height: 75px;
+  height: 131px;
+  line-height: 131px;
   position: relative;
   background: white;
   margin-bottom: 0;
@@ -5838,13 +5838,13 @@ meta.foundation-mq-topbar {
 }
 /* line 180, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar .name {
-  height: 75px;
+  height: 131px;
   margin: 0;
   font-size: 16px;
 }
 /* line 185, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar .name h1 {
-  line-height: 75px;
+  line-height: 131px;
   font-size: 1.0625rem;
   margin: 0;
 }
@@ -5854,7 +5854,7 @@ meta.foundation-mq-topbar {
   color: #777777;
   width: 75%;
   display: block;
-  padding: 0 25px;
+  padding: 0 43.66667px;
 }
 /* line 200, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar .toggle-topbar {
@@ -5870,13 +5870,13 @@ meta.foundation-mq-topbar {
   font-weight: bold;
   position: relative;
   display: block;
-  padding: 0 25px;
-  height: 75px;
-  line-height: 75px;
+  padding: 0 43.66667px;
+  height: 131px;
+  line-height: 131px;
 }
 /* line 218, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar .toggle-topbar.menu-icon {
-  right: 25px;
+  right: 43.66667px;
   top: 50%;
   margin-top: -16px;
   padding-left: 40px;
@@ -5949,7 +5949,7 @@ meta.foundation-mq-topbar {
   width: 100%;
   color: #777777;
   padding: 12px 0 12px 0;
-  padding-left: 25px;
+  padding-left: 43.66667px;
   font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
   font-size: 0.9375rem;
   font-weight: 300;
@@ -5959,8 +5959,8 @@ meta.foundation-mq-topbar {
 /* line 313, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li > a.button {
   font-size: 0.9375rem;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 43.66667px;
+  padding-left: 43.66667px;
   background-color: #f1912a;
   border-color: #d4750e;
   color: white;
@@ -6018,8 +6018,8 @@ meta.foundation-mq-topbar {
 /* line 324, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li > button {
   font-size: 0.9375rem;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 43.66667px;
+  padding-left: 43.66667px;
   background-color: #f1912a;
   border-color: #d4750e;
   color: white;
@@ -6091,7 +6091,7 @@ meta.foundation-mq-topbar {
 }
 /* line 354, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .has-form {
-  padding: 25px;
+  padding: 43.66667px;
 }
 /* line 357, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .has-dropdown {
@@ -6106,7 +6106,7 @@ meta.foundation-mq-topbar {
   border: inset 5px;
   border-color: transparent transparent transparent rgba(255, 255, 255, 0.4);
   border-left-style: solid;
-  margin-right: 25px;
+  margin-right: 43.66667px;
   margin-top: -4.5px;
   position: absolute;
   top: 50%;
@@ -6152,7 +6152,7 @@ meta.foundation-mq-topbar {
 /* line 396, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .dropdown li a {
   font-weight: normal;
-  padding: 8px 25px;
+  padding: 8px 43.66667px;
 }
 /* line 399, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .dropdown li a.parent-link {
@@ -6165,12 +6165,12 @@ meta.foundation-mq-topbar {
 /* line 405, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .dropdown li.title h5 a {
   color: #777777;
-  line-height: 37.5px;
+  line-height: 65.5px;
   display: block;
 }
 /* line 411, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .dropdown li.has-form {
-  padding: 8px 25px;
+  padding: 8px 43.66667px;
 }
 /* line 412, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .dropdown li .button, .top-bar-section .dropdown li button {
@@ -6178,7 +6178,7 @@ meta.foundation-mq-topbar {
 }
 /* line 415, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .dropdown label {
-  padding: 8px 25px 2px;
+  padding: 8px 43.66667px 2px;
   margin-bottom: 0;
   text-transform: uppercase;
   color: #777777;
@@ -6265,8 +6265,8 @@ meta.foundation-mq-topbar {
   }
   /* line 481, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section li:not(.has-form) a:not(.button) {
-    padding: 0 25px;
-    line-height: 75px;
+    padding: 0 43.66667px;
+    line-height: 131px;
     background: white;
   }
   /* line 485, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -6275,8 +6275,8 @@ meta.foundation-mq-topbar {
   }
   /* line 489, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section li.active:not(.has-form) a:not(.button) {
-    padding: 0 25px;
-    line-height: 75px;
+    padding: 0 43.66667px;
+    line-height: 131px;
     color: #777777;
     background: #f1912a;
   }
@@ -6286,7 +6286,7 @@ meta.foundation-mq-topbar {
   }
   /* line 503, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section .has-dropdown > a {
-    padding-right: 45px !important;
+    padding-right: 63.66667px !important;
   }
   /* line 505, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section .has-dropdown > a:after {
@@ -6298,7 +6298,7 @@ meta.foundation-mq-topbar {
     border-color: rgba(255, 255, 255, 0.4) transparent transparent transparent;
     border-top-style: solid;
     margin-top: -2.5px;
-    top: 37.5px;
+    top: 65.5px;
   }
   /* line 514, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section .has-dropdown.moved {
@@ -6344,7 +6344,7 @@ meta.foundation-mq-topbar {
     color: white;
     line-height: 1;
     white-space: nowrap;
-    padding: 12px 25px;
+    padding: 12px 43.66667px;
     background: #333333;
   }
   /* line 556, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -6373,14 +6373,14 @@ meta.foundation-mq-topbar {
     border-top: none;
     border-right: solid 1px white;
     clear: none;
-    height: 75px;
+    height: 131px;
     width: 0;
   }
   /* line 588, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section .has-form {
     background: white;
-    padding: 0 25px;
-    height: 75px;
+    padding: 0 43.66667px;
+    height: 131px;
   }
   /* line 596, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section .right li .dropdown {
@@ -7792,98 +7792,100 @@ th.hide-for-touch {
   display: table-cell !important;
 }
 
-/* line 4, ../scss/_overrides.scss */
+/* line 1, ../scss/_overrides.scss */
 ul {
   float: right;
 }
-/* line 6, ../scss/_overrides.scss */
+/* line 3, ../scss/_overrides.scss */
 ul li {
   display: inline;
 }
-/* line 8, ../scss/_overrides.scss */
+/* line 5, ../scss/_overrides.scss */
 ul li a {
   color: #777777;
   text-decoration: none;
 }
-/* line 10, ../scss/_overrides.scss */
+/* line 7, ../scss/_overrides.scss */
 ul li a:hover {
   color: #777777;
   text-decoration: none;
   border-bottom: 3px solid #f7d43a;
 }
-/* line 16, ../scss/_overrides.scss */
+/* line 13, ../scss/_overrides.scss */
 ul li.active {
   color: #777777;
   text-decoration: none;
   border-bottom: 3px solid #f7d43a;
 }
 
-/* line 24, ../scss/_overrides.scss */
+/* line 21, ../scss/_overrides.scss */
 .hp-main-photo {
   background: #f1912a url(../images/hp-main-photo.jpg) center center;
   background-size: cover;
+  margin-bottom: 30px;
+  margin-top: 30px;
   min-height: 315px;
   padding: 75px;
   text-align: center;
-  margin-bottom: 30px;
 }
 
-/* line 33, ../scss/_overrides.scss */
+/* line 31, ../scss/_overrides.scss */
 h1 {
-  font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
   color: white;
-  text-align: center;
+  font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
   font-size: 40px;
   font-weight: 400;
   line-height: 45px;
   margin-bottom: 30px;
+  text-align: center;
   text-shadow: 2px 2px #777;
 }
 
-/* line 44, ../scss/_overrides.scss */
+/* line 42, ../scss/_overrides.scss */
 .button-join {
-  background: orange(0.15);
-  color: #fff;
+  background: #f1912a;
   border: 1px solid #fff;
   border-radius: 10px;
-  text-align: center;
+  color: #fff;
+  font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
-  text-transform: uppercase;
   margin-bottom: 20px;
-  padding: 8px 0;
-  font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
+  padding: 8px 20px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-/* line 58, ../scss/_overrides.scss */
+/* line 56, ../scss/_overrides.scss */
 .button-join:hover {
-  background: orange(0.15);
+  background: #fff;
   color: #f1912a;
+  border: 1px solid #f1912a;
 }
 
-/* line 64, ../scss/_overrides.scss */
+/* line 63, ../scss/_overrides.scss */
 .stats {
   background-color: #42b5e6;
-  height: 150px;
   padding-top: 37px;
+  margin-bottom: 50px;
 }
 
-/* line 70, ../scss/_overrides.scss */
+/* line 69, ../scss/_overrides.scss */
 .img-icon {
   float: right;
 }
 
-/* line 74, ../scss/_overrides.scss */
+/* line 73, ../scss/_overrides.scss */
 h2 {
-  font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
   color: white;
-  textalign: left;
+  font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 22px;
+  text-align: left;
 }
 
-/* line 83, ../scss/_overrides.scss */
+/* line 82, ../scss/_overrides.scss */
 h3 {
   color: white;
   font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
@@ -7893,37 +7895,43 @@ h3 {
   text-align: left;
 }
 
-/* line 92, ../scss/_overrides.scss */
+/* line 91, ../scss/_overrides.scss */
 .feature {
-  padding: 50px;
+  padding: 0px 50px 50px 50px;
 }
 
-/* line 96, ../scss/_overrides.scss */
+/* line 95, ../scss/_overrides.scss */
 h4 {
-  font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
   color: #2a685f;
-  text-align: left;
+  font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
   font-size: 20px;
   font-weight: 700;
+  text-align: left;
 }
 
-/* line 104, ../scss/_overrides.scss */
+/* line 103, ../scss/_overrides.scss */
+.img-rounded {
+  border-radius: 10px;
+}
+
+/* line 107, ../scss/_overrides.scss */
 .quote {
-  font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
   color: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
-  text-align: left;
+  font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
   font-size: 17px;
-  font-weight: 400;
   font-style: italic;
+  font-weight: 400;
+  text-align: left;
 }
 
-/* line 113, ../scss/_overrides.scss */
+/* line 116, ../scss/_overrides.scss */
 body, p {
-  font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
   color: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
-  text-align: left;
+  font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
+  line-height: 26px;
+  text-align: left;
 }
 
 /* line 3, ../scss/_marketing_footer.scss */
