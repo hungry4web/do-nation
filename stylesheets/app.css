@@ -7792,36 +7792,34 @@ th.hide-for-touch {
   display: table-cell !important;
 }
 
-/* line 1, ../scss/_overrides.scss */
+/* line 5, ../scss/_global.scss */
 ul {
   float: right;
 }
-/* line 3, ../scss/_overrides.scss */
+/* line 7, ../scss/_global.scss */
 ul li {
   display: inline;
 }
-/* line 5, ../scss/_overrides.scss */
+/* line 9, ../scss/_global.scss */
 ul li a {
   color: #777777;
   text-decoration: none;
 }
-/* line 7, ../scss/_overrides.scss */
+/* line 11, ../scss/_global.scss */
 ul li a:hover {
   color: #777777;
   text-decoration: none;
   border-bottom: 3px solid #f7d43a;
 }
-/* line 13, ../scss/_overrides.scss */
+/* line 17, ../scss/_global.scss */
 ul li.active {
   color: #777777;
   text-decoration: none;
   border-bottom: 3px solid #f7d43a;
 }
 
-/* line 21, ../scss/_overrides.scss */
-.hp-main-photo {
-  background: #f1912a url(../images/hp-main-photo.jpg) center center;
-  background-size: cover;
+/* line 27, ../scss/_global.scss */
+.hp-main, .browse-main {
   margin-bottom: 30px;
   margin-top: 30px;
   min-height: 315px;
@@ -7829,7 +7827,19 @@ ul li.active {
   text-align: center;
 }
 
-/* line 31, ../scss/_overrides.scss */
+/* line 37, ../scss/_global.scss */
+footer {
+  background-color: #b2d23c;
+  padding: 1.3em;
+}
+
+/* line 1, ../scss/_hp-content.scss */
+.hp-main {
+  background: #f1912a url(../images/hp-main-photo.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+/* line 8, ../scss/_hp-content.scss */
 h1 {
   color: white;
   font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
@@ -7841,7 +7851,7 @@ h1 {
   text-shadow: 2px 2px #777;
 }
 
-/* line 42, ../scss/_overrides.scss */
+/* line 19, ../scss/_hp-content.scss */
 .button-join {
   background: #f1912a;
   border: 1px solid #fff;
@@ -7856,26 +7866,27 @@ h1 {
   text-transform: uppercase;
 }
 
-/* line 56, ../scss/_overrides.scss */
+/* line 33, ../scss/_hp-content.scss */
 .button-join:hover {
   background: #fff;
   color: #f1912a;
   border: 1px solid #f1912a;
 }
 
-/* line 63, ../scss/_overrides.scss */
+/* line 40, ../scss/_hp-content.scss */
 .stats {
   background-color: #42b5e6;
-  padding-top: 37px;
   margin-bottom: 50px;
+  padding: 30px 0;
 }
 
-/* line 69, ../scss/_overrides.scss */
+/* line 47, ../scss/_hp-content.scss */
 .img-icon {
-  float: right;
+  float: left;
+  margin-right: 15px;
 }
 
-/* line 73, ../scss/_overrides.scss */
+/* line 53, ../scss/_hp-content.scss */
 h2 {
   color: white;
   font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
@@ -7885,7 +7896,7 @@ h2 {
   text-align: left;
 }
 
-/* line 82, ../scss/_overrides.scss */
+/* line 62, ../scss/_hp-content.scss */
 h3 {
   color: white;
   font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
@@ -7895,12 +7906,18 @@ h3 {
   text-align: left;
 }
 
-/* line 91, ../scss/_overrides.scss */
-.feature {
+/* line 71, ../scss/_hp-content.scss */
+.feature-left {
+  padding: 0px 0px 50px 50px;
+  text-align: center;
+}
+
+/* line 76, ../scss/_hp-content.scss */
+.feature-right {
   padding: 0px 50px 50px 50px;
 }
 
-/* line 95, ../scss/_overrides.scss */
+/* line 80, ../scss/_hp-content.scss */
 h4 {
   color: #2a685f;
   font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
@@ -7909,12 +7926,12 @@ h4 {
   text-align: left;
 }
 
-/* line 103, ../scss/_overrides.scss */
+/* line 88, ../scss/_hp-content.scss */
 .img-rounded {
   border-radius: 10px;
 }
 
-/* line 107, ../scss/_overrides.scss */
+/* line 92, ../scss/_hp-content.scss */
 .quote {
   color: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
   font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
@@ -7924,7 +7941,7 @@ h4 {
   text-align: left;
 }
 
-/* line 116, ../scss/_overrides.scss */
+/* line 101, ../scss/_hp-content.scss */
 body, p {
   color: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
   font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
@@ -7934,8 +7951,40 @@ body, p {
   text-align: left;
 }
 
-/* line 3, ../scss/_marketing_footer.scss */
-footer {
-  background-color: #b2d23c;
-  padding: 1.3em;
+/* line 1, ../scss/_browse-content.scss */
+.browse-main {
+  background: #f1912a url(../images/browse-main-photo.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+/* line 7, ../scss/_browse-content.scss */
+.animals-rollover a {
+  background-image: url(../images/icon-animals-2x.png);
+  display: block;
+  float: left;
+  height: 75px;
+  margin-right: 15px;
+  width: 75px;
+}
+
+/* line 16, ../scss/_browse-content.scss */
+.animals-rollover a:hover {
+  background-image: url(../images/icon-animals-2x-color.png);
+  display: block;
+  float: left;
+  height: 75px;
+  margin-right: 15px;
+  width: 75px;
+}
+
+/* line 1, ../scss/_profile-content.scss */
+.profile-main {
+  background-color: #ddd;
+  margin-bottom: 30px;
+}
+
+/* line 6, ../scss/_profile-content.scss */
+.profile-img {
+  border-radius: 10px;
+  float: left;
 }

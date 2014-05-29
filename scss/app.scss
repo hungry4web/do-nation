@@ -3,12 +3,16 @@
 @import "variables"; 
 @import "foundation";
 @import "overrides";
-
-
-//MARKETING
-@import "marketing_footer";
-@import "marketing_home";
+@import "mixins";
+@import "global";
 
 
 
-//APPLICATION
+//HOMEPAGE
+@import "hp-content";
+
+//BROWSE
+@import "browse-content";
+
+//PROFILE
+@import "profile-content";
