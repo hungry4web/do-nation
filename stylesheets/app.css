@@ -7792,33 +7792,44 @@ th.hide-for-touch {
   display: table-cell !important;
 }
 
-/* line 5, ../scss/_global.scss */
+/* line 3, ../scss/_global.scss */
+body, p {
+  color: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 26px;
+  text-align: left;
+}
+
+/* line 14, ../scss/_global.scss */
 ul {
   float: right;
 }
-/* line 7, ../scss/_global.scss */
+/* line 16, ../scss/_global.scss */
 ul li {
   display: inline;
 }
-/* line 9, ../scss/_global.scss */
+/* line 18, ../scss/_global.scss */
 ul li a {
   color: #777777;
+  font-size: 14px;
   text-decoration: none;
 }
-/* line 11, ../scss/_global.scss */
+/* line 21, ../scss/_global.scss */
 ul li a:hover {
   color: #777777;
   text-decoration: none;
   border-bottom: 3px solid #f7d43a;
 }
-/* line 17, ../scss/_global.scss */
+/* line 27, ../scss/_global.scss */
 ul li.active {
   color: #777777;
   text-decoration: none;
   border-bottom: 3px solid #f7d43a;
 }
 
-/* line 27, ../scss/_global.scss */
+/* line 37, ../scss/_global.scss */
 .hp-main, .browse-main {
   margin-bottom: 30px;
   margin-top: 30px;
@@ -7827,19 +7838,7 @@ ul li.active {
   text-align: center;
 }
 
-/* line 37, ../scss/_global.scss */
-footer {
-  background-color: #b2d23c;
-  padding: 1.3em;
-}
-
-/* line 1, ../scss/_hp-content.scss */
-.hp-main {
-  background: #f1912a url(../images/hp-main-photo.jpg) center center no-repeat;
-  background-size: cover;
-}
-
-/* line 8, ../scss/_hp-content.scss */
+/* line 45, ../scss/_global.scss */
 h1 {
   color: white;
   font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
@@ -7851,7 +7850,52 @@ h1 {
   text-shadow: 2px 2px #777;
 }
 
-/* line 19, ../scss/_hp-content.scss */
+/* line 59, ../scss/_global.scss */
+.stats {
+  background-color: #42b5e6;
+  margin-bottom: 50px;
+  padding: 30px 0;
+}
+
+/* line 66, ../scss/_global.scss */
+.img-icon {
+  float: left;
+  margin-right: 15px;
+}
+
+/* line 72, ../scss/_global.scss */
+h2 {
+  color: white;
+  font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+}
+
+/* line 83, ../scss/_global.scss */
+h3 {
+  color: white;
+  font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 22px;
+  text-align: left;
+}
+
+/* line 97, ../scss/_global.scss */
+footer {
+  background-color: #b2d23c;
+  padding: 1.3em;
+}
+
+/* line 1, ../scss/_hp-content.scss */
+.hp-main {
+  background: #f1912a url(../images/hp-main-photo.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+/* line 7, ../scss/_hp-content.scss */
 .button-join {
   background: #f1912a;
   border: 1px solid #fff;
@@ -7866,58 +7910,25 @@ h1 {
   text-transform: uppercase;
 }
 
-/* line 33, ../scss/_hp-content.scss */
+/* line 21, ../scss/_hp-content.scss */
 .button-join:hover {
   background: #fff;
   color: #f1912a;
   border: 1px solid #f1912a;
 }
 
-/* line 40, ../scss/_hp-content.scss */
-.stats {
-  background-color: #42b5e6;
-  margin-bottom: 50px;
-  padding: 30px 0;
-}
-
-/* line 47, ../scss/_hp-content.scss */
-.img-icon {
-  float: left;
-  margin-right: 15px;
-}
-
-/* line 53, ../scss/_hp-content.scss */
-h2 {
-  color: white;
-  font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 22px;
-  text-align: left;
-}
-
-/* line 62, ../scss/_hp-content.scss */
-h3 {
-  color: white;
-  font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 22px;
-  text-align: left;
-}
-
-/* line 71, ../scss/_hp-content.scss */
+/* line 27, ../scss/_hp-content.scss */
 .feature-left {
   padding: 0px 0px 50px 50px;
   text-align: center;
 }
 
-/* line 76, ../scss/_hp-content.scss */
+/* line 32, ../scss/_hp-content.scss */
 .feature-right {
   padding: 0px 50px 50px 50px;
 }
 
-/* line 80, ../scss/_hp-content.scss */
+/* line 36, ../scss/_hp-content.scss */
 h4 {
   color: #2a685f;
   font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
@@ -7926,28 +7937,18 @@ h4 {
   text-align: left;
 }
 
-/* line 88, ../scss/_hp-content.scss */
+/* line 44, ../scss/_hp-content.scss */
 .img-rounded {
   border-radius: 10px;
 }
 
-/* line 92, ../scss/_hp-content.scss */
+/* line 48, ../scss/_hp-content.scss */
 .quote {
   color: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
   font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
   font-size: 17px;
   font-style: italic;
   font-weight: 400;
-  text-align: left;
-}
-
-/* line 101, ../scss/_hp-content.scss */
-body, p {
-  color: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
-  font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 26px;
   text-align: left;
 }
 
@@ -7977,6 +7978,48 @@ body, p {
   width: 75px;
 }
 
+/* line 25, ../scss/_browse-content.scss */
+.charity-box {
+  background-color: #ddd;
+  border-radius: 10px;
+  height: 255px;
+  margin-bottom: 30px;
+  width: 225px;
+}
+
+/* line 34, ../scss/_browse-content.scss */
+h5 {
+  color: #777;
+  font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+  margin: 10px 0 0 10px;
+  text-align: left;
+}
+
+/* line 46, ../scss/_browse-content.scss */
+h6 {
+  color: #777;
+  font-family: "Open Sans", sans-serif, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 300;
+  margin-left: 10px;
+  text-align: left;
+}
+
+/* line 58, ../scss/_browse-content.scss */
+.img-icon-sm {
+  float: right;
+  margin: 10px 10px 10px 0;
+}
+
+/* line 64, ../scss/_browse-content.scss */
+.img-rounded-ch {
+  border-radius: 10px 10px 0 0;
+}
+
 /* line 1, ../scss/_profile-content.scss */
 .profile-main {
   background-color: #ddd;
@@ -7984,7 +8027,7 @@ body, p {
 }
 
 /* line 6, ../scss/_profile-content.scss */
-.profile-img {
-  border-radius: 10px;
+.img-rounded-profile {
+  border-radius: 0 10px 10px 0;
   float: left;
 }

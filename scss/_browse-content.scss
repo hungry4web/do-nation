@@ -1,23 +1,65 @@
 .browse-main {
-  @extend %main-photo;
-  background: $primary-color url(../images/browse-main-photo.jpg) center center no-repeat;
-  background-size: cover;
+    @extend %main-photo;
+    background: $primary-color url(../images/browse-main-photo.jpg) center center no-repeat;
+    background-size: cover;
 }
 
 .animals-rollover a {
-  background-image:url(../images/icon-animals-2x.png); 
-  display: block;
-  float: left;
-  height: 75px;
-  margin-right: 15px;
-  width: 75px;
+    background-image:url(../images/icon-animals-2x.png); 
+    display: block;
+    float: left;
+    height: 75px;
+    margin-right: 15px;
+    width: 75px;
 }
 
 .animals-rollover a:hover {
-  background-image:url(../images/icon-animals-2x-color.png); 
-  display: block;
-  float: left;
-  height: 75px;
-  margin-right: 15px;
-  width: 75px;
+    background-image:url(../images/icon-animals-2x-color.png); 
+    display: block;
+    float: left;
+    height: 75px;
+    margin-right: 15px;
+    width: 75px;
 }
+
+.charity-box {
+    background-color: #ddd;
+    border-radius: $global-radius;
+    height:255px;
+    margin-bottom: 30px;
+    width:225px;
+  
+}
+
+h5 {
+    color: #777;
+    font: { 
+      family: $body-font-family;
+      size: 16px;
+      weight: 600;
+    }
+    line-height: 18px;
+    margin: 10px 0 0 10px;
+    text-align: left;
+}
+
+h6 {
+    color: #777;
+    font: { 
+      family: $body-font-family;
+      size: 14px;
+      style: italic;
+      weight: 300;
+    }
+    margin-left: 10px;
+    text-align: left;
+}
+
+.img-icon-sm {
+    float: right;
+    margin: 10px 10px 10px 0;
+    
+}
+
+.img-rounded-ch {
+    border-radius: 10px 10px 0 0;}
