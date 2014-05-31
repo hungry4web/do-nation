@@ -28,14 +28,26 @@
     height:255px;
     margin-bottom: 30px;
     width:225px;
-  
+}
+
+%charity-box-clicked {
+    border-radius: $global-radius;
+    height:255px;
+    margin-bottom: 30px;
+    width:225px;
+}
+
+.charity-box-clicked-an {
+  @extend %charity-box-clicked;
+  background-color: $animals-color;
+  padding: 30px;
 }
 
 h5 {
     color: #777;
     font: { 
       family: $body-font-family;
-      size: 16px;
+      size: $h5-font-size;
       weight: 600;
     }
     line-height: 18px;
@@ -47,7 +59,7 @@ h6 {
     color: #777;
     font: { 
       family: $body-font-family;
-      size: 14px;
+      size: $h6-font-size;
       style: italic;
       weight: 300;
     }

@@ -5,23 +5,19 @@
 }
 
 .button-join {
-    background: $primary-color;
-    border: 1px solid #fff;
-    border-radius: $global-radius;
-    color: #fff;
-    font-family: $body-font-family;
-    font-size: 15px;
-    font-weight: 300;
-    margin-bottom: 20px;
-    padding: 8px 20px;
-    text-align: center;
-    text-transform: uppercase;
+    @extend %button;
+    background-color: $primary-color;
 }
 
-.button-join:hover {
-    background: #fff;
+.button-join:hover{
+    @extend %button:hover;
     color: $primary-color;
     border: 1px solid $primary-color;
+}
+
+.stats-subhead-hp {
+    @extend %stats-subhead;
+    color: $header-font-color;
 }
 
 .feature-left {
@@ -33,12 +29,9 @@
     padding: 0px 50px 50px 50px;
 }
 
-h4 {
+.subhead-hp {
+    @extend %subhead;
     color: $subhead-font-color;
-    font-family: $body-font-family;
-    font-size: 20px;
-    font-weight: 700;
-    text-align: left;
 }
 
 .img-rounded {
@@ -47,10 +40,12 @@ h4 {
 
 .quote {
     color: $body-font-family;
-    font-family: $body-font-family;
-    font-size: 17px;
-    font-style: italic;
-    font-weight: 400;
+    font: {
+        family: $body-font-family;
+        size: 17px;
+        style: italic;
+        weight: 400;
+    }
     text-align: left;
 }
 

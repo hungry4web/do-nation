@@ -1,19 +1,42 @@
 // Google Fonts
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700);
 
+//TYPOGRAPHY
+$header-line-height: 1.2;
+
+$h1-font-size: rem-calc(40);
+$h2-font-size: rem-calc(24);
+$h3-font-size: rem-calc(18);
+$h4-font-size: rem-calc(20); // subhead
+$h5-font-size: 1rem;
+$h6-font-size: rem-calc(14);
+
+// ANCHORS
+
+// $anchor-text-decoration: none;
+// $anchor-font-color: $primary-color;
+// $anchor-font-color-hover: scale-color($primary-color, $lightness: -14%);
+
 
 // FONTS
 $open-sans: 'Open Sans',sans-serif;
 $body-font-family: $open-sans,Helvetica,Arial,sans-serif;
 $body-font-color: #777;
 $header-font-color: #fff;
-$subhead-font-color: #2a685f;
+$subhead-font-color: #2a685f; // dk green
 
 // COLORS
-$primary-color: #f1912a;
-$secondary-color: #42b5e6;
+$primary-color: #f1912a; // orange
+$secondary-color: #42b5e6; // blue
 $hover-color: #f1912a;
-$third-color: #b2d23c;
+$third-color: #b2d23c; // lime green
+
+$animals-color: #f7d43a; // yellow
+$community-color: #2a685f; // dk green
+$education-color: #52b78e; // aqua
+$environment-color: #b2d23c; // lime green
+$health-color: #f1912a; // orange
+
 
 // CORNERS
 $global-radius: 10px;
