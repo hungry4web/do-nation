@@ -4,22 +4,59 @@
     background-size: cover;
 }
 
-.animals-rollover a {
-    background-image:url(../images/icon-animals-2x.png); 
-    display: block;
-    float: left;
-    height: 75px;
-    margin-right: 15px;
-    width: 75px;
+%icon-rollover {
+  display: block;
+  height: 75px;
+  width: 75px;
 }
 
-.animals-rollover a:hover {
-    background-image:url(../images/icon-animals-2x-color.png); 
-    display: block;
-    float: left;
-    height: 75px;
-    margin-right: 15px;
-    width: 75px;
+%icon-rollover-hover{
+  background-position: 0 -75px;
+}
+
+.animals-rollover:hover { 
+  @extend %icon-rollover-hover;
+}
+
+.animals-rollover {
+  @extend %icon-rollover;
+  background: url(../images/icon-animals-ro.png) no-repeat 0 0;
+}
+
+.community-rollover {
+  @extend %icon-rollover;
+  background: url(../images/icon-community-ro.png) no-repeat 0 0;
+}
+
+.community-rollover:hover { 
+  @extend %icon-rollover-hover;
+}
+
+.education-rollover {
+  @extend %icon-rollover;
+  background: url(../images/icon-education-ro.png) no-repeat 0 0;
+}
+
+.education-rollover:hover { 
+  @extend %icon-rollover-hover;
+}
+
+.environment-rollover {
+  @extend %icon-rollover;
+  background: url(../images/icon-environment-ro.png) no-repeat 0 0;
+}
+
+.environment-rollover:hover { 
+  @extend %icon-rollover-hover;
+}
+
+.health-rollover {
+  @extend %icon-rollover;
+  background: url(../images/icon-health-ro.png) no-repeat 0 0;
+}
+
+.health-rollover:hover { 
+  @extend %icon-rollover-hover;
 }
 
 .charity-box {
@@ -75,3 +112,4 @@ h6 {
 
 .img-rounded-ch {
     border-radius: 10px 10px 0 0;}
+

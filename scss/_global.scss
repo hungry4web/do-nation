@@ -11,6 +11,14 @@ body,p {
     text-align: left;
 }
 
+// @each $subhead, $color in (subhead-hp, $animals-color),
+//                        (subhead-profile, $body-font-color),
+//                        (subhead-browse, $primary-color) {
+//        .#{$subhead}-color{
+//            color:$color;
+//        }
+//    }
+
 %subhead {
     font: { 
       family: $body-font-family;
@@ -93,11 +101,39 @@ h1 {
 
 //STATS BAR
 
-.stats {
-    background-color: $secondary-color;
+%stats {
     margin-bottom: 50px;
     padding: 30px 0;
+}
 
+.stats-animals{
+    @extend %stats;
+    background-color: $animals-color;
+}
+
+.stats-community{
+    @extend %stats;
+    background-color: $community-color;
+}
+
+.stats-education{
+    @extend %stats;
+    background-color: $education-color;
+}
+
+.stats-environment{
+    @extend %stats;
+    background-color: $environment-color;
+}
+
+.stats-health{
+    @extend %stats;
+    background-color: $health-color;
+}
+
+.stats {
+    @extend %stats;
+    background-color: $secondary-color;
 }
 
 .img-icon {

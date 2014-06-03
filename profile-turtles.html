@@ -28,29 +28,34 @@
     <div class="row">
 
       <div class="medium-4 small-12 columns">
-        <ul class="example-orbit" data-orbit>
-          <li><img src="images/ch-turtles.jpg" alt="slide 1" />
-            <div class="orbit-caption">
-                Caption One.
-            </div>
-          </li>
-
-          <li class="active"><img src="images/ch-kitchen.jpg" alt="slide 2" />
-            <div class="orbit-caption">
-               Caption Two.
-            </div>
-          </li>
-
-          <li><img src="images/ch-library.jpg"  alt="slide 3" />
-            <div class="orbit-caption">
-              Caption Three.
-            </div>
-          </li>
-        </ul>
+    
+<!--ORBIT GALLERY-->
+        <ul class="example-orbit"  data-orbit data-options="animation_speed:1500;">
+  <li>
+    <img src="images/ch-turtles.jpg"/>
+    <div class="orbit-caption">
+      Caption One.
+    </div>
+  </li>
+  <li class="active">
+    <img src="images/ch-kitchen.jpg"/>
+    <div class="orbit-caption">
+      Caption Two.
+    </div>
+  </li>
+  <li>
+    <img src="images/ch-nepal.jpg"/>
+    <div class="orbit-caption">
+      Caption Three.
+    </div>
+  </li>
+</ul>
+<!--ORIBIT GALLERY END-->
 
       </div>
 
       <div class="profile-left medium-4 small-12 columns">
+        <h4 class="subhead-profile">Save the Sea Turtles</h4>
         <ul class="square">
           <li>Lorem ipsum dolor sit amet, consectetur</li>
           <li>Adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </li>
@@ -62,7 +67,27 @@
       </div>
 
       <div class="profile-right medium-4 small-12 columns">
-        <a href="#" class="button-donate-an">DONATE</a>
+
+ <a href="#" data-reveal-id="myModal"class="button-donate-an">DONATE</a>
+            <div id="myModal" class="reveal-modal" data-reveal>
+              <div class="donate-form-an">
+                <h2>DONATE</h2>
+                <h3>Cause: Save the Sea Turtles</h3>
+                  <form action="" >
+                   $<input placeholder="Donation Amount" type="text"> Hide Amount
+                    <input placeholder="Name to Be Shown in Comments" type="text"> Hide Name
+                    <input placeholder="Comments" type="text"> 
+                     <a href="#" class="button-donate-an">Credit Card</a>
+                      <a href="#" class="button-donate-an">PayPal</a>
+                  </form>
+              </div>
+          <a class="close-reveal-modal">&#215;</a>
+            </div>
+
+
+      
+
+
         <h4 class="subhead-profile">GOAL:</h4><h2 class="stats-subhead-profile">$5,000</h2>
         <h4 class="subhead-profile">PROGRESS:</h4><h2 class="stats-subhead-profile">$3,876</h2>
       </div>
@@ -70,7 +95,7 @@
     </div>
   </section>
 
-  <section class="stats">
+  <section class="stats-animals">
     <div class="row">
         <div class="medium-3 small-12 columns">
           <img class="img-icon" height="75px" src="images/icon-facebook-2x.png" width="75px">
