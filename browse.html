@@ -75,20 +75,27 @@
   <section>
     <div class="row">
 
-      <div class="medium-3 small-12 columns">
-        <div class="charity-box">
-           <img width="225px" class="img-rounded-ch" src="images/ch-turtles.jpg">
-            <img class="img-icon-sm" src="images/icon-animals-2x-color.png" width="40px">
-              <h5>Save the Turtles</h5>
-                <h6>Boca Raton, FL</h6>
+      <div class="medium-3 small-12 columns charity-box">
+        <div class="box-front">
+          <img src="images/ch-turtles.jpg">
+          <img class="img-icon-sm" src="images/icon-animals-2x-color.png" width="40px">
+          <h5>Save the Turtles</h5>
+          <h6>Boca Raton, FL</h6>
+        </div>
+
+         <div class="box-back">
+          <a href="#" class="close-box-details">X</a>
+          <h5>Text here</h5>
+          <h6>Text Here</h6>
+          <a href="profile-turtles.html" class="button-donate-an donate-button">DONATE</a>
         </div>
       </div>
 
       <div class="medium-3 small-12 columns">
         <div class="charity-box-clicked-an">
           <h5>Text here</h5>
-            <h6>Text Here</h6>
-              <a href="profile-turtles.html" class="button-donate-an">DONATE</a>
+          <h6>Text Here</h6>
+          <a href="profile-turtles.html" class="button-donate-an">DONATE</a>
         </div>
       </div>
 
@@ -163,6 +170,27 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script> 
     <script src="bower_components/foundation/js/foundation.min.js"></script> 
     <script src="js/app.js"></script>
+
+    <script>
+      $(function(e){
+        e.preventDefault;
+        var $box_front = $('.box-front');
+            $box_back = $('.box-back');
+            $close_button = $('.close-box-details');
+          
+          $($box_front).on('click', function(e){
+          e.preventDefault();
+          $(this).hide().removeClass('animated flip');
+          $($box_back).show().addClass('animated flip');
+        });
+
+        $($close_button).on('click', function(e){
+          e.preventDefault();
+          $($box_back).hide().removeClass('animated flip');
+          $($box_front).show().addClass('animated flip');
+        });
+      });
+    </script>
     
   </body>
 </html>

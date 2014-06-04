@@ -59,13 +59,6 @@
   @extend %icon-rollover-hover;
 }
 
-.charity-box {
-    background-color: #ddd;
-    border-radius: $global-radius;
-    height:255px;
-    margin-bottom: 30px;
-    width:225px;
-}
 
 %charity-box-clicked {
     border-radius: $global-radius;
@@ -112,4 +105,29 @@ h6 {
 
 .img-rounded-ch {
     border-radius: 10px 10px 0 0;}
+
+.charity-box{
+  margin-bottom: 30px;
+  
+  .box-front{
+    background-color: #DDDDDD;
+    border-radius:10px;
+    padding-bottom:2.3em;
+    overflow:hidden;
+  }
+
+  .box-back{
+    background-color:$animals-color;
+    border-radius:10px;
+    display:none;
+    height:255px;
+    padding-bottom:2.3em;
+    overflow:hidden;
+
+    .close-box-details{
+      color:#ffffff;
+      font-size:25px;
+    }
+  }
+}
 
