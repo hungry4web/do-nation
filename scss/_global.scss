@@ -151,15 +151,35 @@ h1 {
     text-align: left;   
 }
 
-h3 {
-    color: $header-font-color;
+
+h4 {
+    color: #fff;
     font:   {
         family: $body-font-family;
-        size: $h3-font-size;
+        size: $h4-font-size;
         weight: 300;
     }
   line-height: 22px;
-  text-align: left;
+}
+
+h2 {
+    color: #fff;
+    font:   {
+        family: $body-font-family;
+        size: $h2-font-size;
+        weight: 300;
+    }
+  line-height: 22px;
+}
+
+h4 {
+    color: #fff;
+    font:   {
+        family: $body-font-family;
+        size: $h4-font-size;
+        weight: 300;
+    }
+  line-height: 22px;
 }
 
 
