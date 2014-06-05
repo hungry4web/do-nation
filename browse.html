@@ -7,6 +7,35 @@
     <title>Do-Nation</title>
     <link href="stylesheets/app.css" rel="stylesheet">
     <script src="bower_components/modernizr/modernizr.js"></script>
+
+    <script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  $('#filterOptions li a').click(function() {
+    // fetch the class of the clicked item
+    var ourClass = $(this).attr('class');
+    
+    // reset the active class on all the buttons
+    $('#filterOptions li').removeClass('active');
+    // update the active state on our clicked button
+    $(this).parent().addClass('active');
+    
+    if(ourClass == 'all') {
+      // show all our items
+      $('#ourHolder').children('div.item').show();  
+    }
+    else {
+      // hide all elements that don't share ourClass
+      $('#ourHolder').children('div:not(.' + ourClass + ')').hide();
+      // show all elements that do share ourClass
+      $('#ourHolder').children('div.' + ourClass).show();
+    }
+    return false;
+  });
+});
+</script>
+
 </head>
 
 <body>
@@ -36,180 +65,198 @@
   <section class="stats">
     <div class="row">
 
-        <div class="medium-2 small-12 columns">
-          <img class="img-icon" src="images/icon-location-2x.png" width="50px">
-          <h3>Nearby</h3>
-        </div>
+      <div class="medium-2 small-12 columns">
+        <img class="img-icon" src="images/icon-location-2x.png" width="50px">
+        <h3>Nearby</h3>
+      </div>
 
-        <div class="vert medium-2 small-12 columns">
-          <img class="img-icon" src="images/icon-new-2x.png" width="50px">
-          <h3>Newly Added</h3>
-        </div>
+      <div class="vert medium-2 small-12 columns">
+        <img class="img-icon" src="images/icon-new-2x.png" width="50px">
+        <h3>Newly Added</h3>
+      </div>
 
-        <div class="medium-3 small-12 columns">
-          &nbsp;
-        </div>
-
-        <div class="medium-1 small-12 columns">
-           <a class="health-rollover" href="#"></a>
-        </div>
-
-         <div class="medium-1 small-12 columns">
-          <a class="animals-rollover" href="#"></a>
-        </div>
-
-         <div class="medium-1 small-12 columns">
-           <a class="education-rollover" href="#"></a>
-        </div>
-
-        <div class="medium-1 small-12 columns">
-           <a class="community-rollover" href="#"></a>
-        </div>
-
-         <div class="medium-1 small-12 columns">
-           <a class="environment-rollover" href="#"></a>
-        </div>
+      <div class="medium-8 small-12 columns">
+        <ul id="filterOptions">
+          <li class="filter-active"><a href="#" class="all">All</a></li>
+          <li><a class="community" href="#">
+            <img class="img-icon-sm" src="images/icon-community-2x.png" width="75px"></a></li>
+          <li><a class="environment" href="#">
+            <img class="img-icon-sm" src="images/icon-environment-2x.png" width="75px"></a></li>
+          <li><a class="education" href="#">
+            <img class="img-icon-sm" src="images/icon-education-2x.png" width="75px"></a></li>
+          <li><a class="animals" href="#">
+            <img class="img-icon-sm" src="images/icon-animals-2x.png" width="75px"></a></li>
+          <li><a class="health" href="#">
+            <img class="img-icon-sm" src="images/icon-health-2x.png" width="75px"></a></li>
+        </ul>
+      </div>
 
     </div>
   </section>
 
   <section>
-    <div class="row">
+    <div id="ourHolder" class="row">
+      
+        <div class="animals">
+          <div class="medium-3 small-12 columns charity-box">
 
-      <div class="medium-3 small-12 columns charity-box">
-        <div class="box-front">
-          <img src="images/ch-turtles.jpg">
-          <img class="img-icon-sm" src="images/icon-animals-2x-color.png" width="40px">
-          <h5>Save the Turtles</h5>
-          <h6>Boca Raton, FL</h6>
+            <div class="box-front">
+              <img src="images/ch-turtles.jpg">
+              <img class="img-icon-sm" src="images/icon-animals-2x-color.png" width="40px">
+              <h5>Save the Turtles</h5>
+              <h6>Boca Raton, FL</h6>
+            </div>
+
+            <div class="box-back">
+              <a href="#" class="close-box-details">X</a>
+              <h5>Text here</h5>
+              <h6>Text Here</h6>
+              <a href="profile-turtles.html" class="button-donate-an donate-button">DONATE</a>
+            </div>
+          </div>
         </div>
 
-         <div class="box-back">
-          <a href="#" class="close-box-details">X</a>
-          <h5>Text here</h5>
-          <h6>Text Here</h6>
-          <a href="profile-turtles.html" class="button-donate-an donate-button">DONATE</a>
-        </div>
-      </div>
+      
+        <div class="health">
+          <div class="medium-3 small-12 columns charity-box">
+        
+            <div class="box-front">
+              <img src="images/ch-breast.jpg">
+              <img class="img-icon-sm" src="images/icon-health-2x-color.png" width="40px">
+              <h5>Save the Turtles</h5>
+              <h6>Boca Raton, FL</h6>
+            </div>
 
-      <div class="medium-3 small-12 columns charity-box">
-        <div class="box-front">
-          <img src="images/ch-breast.jpg">
-          <img class="img-icon-sm" src="images/icon-health-2x-color.png" width="40px">
-          <h5>Save the Turtles</h5>
-          <h6>Boca Raton, FL</h6>
-        </div>
-
-         <div class="box-back">
-          <a href="#" class="close-box-details">X</a>
-          <h5>Text here</h5>
-          <h6>Text Here</h6>
-          <a href="profile-turtles.html" class="button-donate-an donate-button">DONATE</a>
-        </div>
-      </div>
-
-      <div class="medium-3 small-12 columns charity-box">
-        <div class="box-front">
-          <img src="images/ch-nepal.jpg">
-          <img class="img-icon-sm" src="images/icon-community-2x-color.png" width="40px">
-          <h5>Save the Turtles</h5>
-          <h6>Boca Raton, FL</h6>
+            <div class="box-back">
+              <a href="#" class="close-box-details">X</a>
+              <h5>Text here</h5>
+              <h6>Text Here</h6>
+              <a href="profile-turtles.html" class="button-donate-an donate-button">DONATE</a>
+            </div>
+          </div>
         </div>
 
-         <div class="box-back">
-          <a href="#" class="close-box-details">X</a>
-          <h5>Text here</h5>
-          <h6>Text Here</h6>
-          <a href="profile-turtles.html" class="button-donate-an donate-button">DONATE</a>
-        </div>
-      </div>
+      
+        <div class="community">
+          <div class="medium-3 small-12 columns charity-box">
+        
+            <div class="box-front">
+              <img src="images/ch-nepal.jpg">
+              <img class="img-icon-sm" src="images/icon-community-2x-color.png" width="40px">
+              <h5>Save the Turtles</h5>
+              <h6>Boca Raton, FL</h6>
+            </div>
 
-      <div class="medium-3 small-12 columns charity-box">
-        <div class="box-front">
-          <img src="images/ch-somalia.jpg">
-          <img class="img-icon-sm" src="images/icon-community-2x-color.png" width="40px">
-          <h5>Save the Turtles</h5>
-          <h6>Boca Raton, FL</h6>
-        </div>
-
-         <div class="box-back">
-          <a href="#" class="close-box-details">X</a>
-          <h5>Text here</h5>
-          <h6>Text Here</h6>
-          <a href="profile-turtles.html" class="button-donate-an donate-button">DONATE</a>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="row">
-
-     <div class="medium-3 small-12 columns charity-box">
-        <div class="box-front">
-          <img src="images/ch-kitchen.jpg">
-          <img class="img-icon-sm" src="images/icon-community-2x-color.png" width="40px">
-          <h5>Save the Turtles</h5>
-          <h6>Boca Raton, FL</h6>
+            <div class="box-back">
+              <a href="#" class="close-box-details">X</a>
+              <h5>Text here</h5>
+              <h6>Text Here</h6>
+              <a href="profile-turtles.html" class="button-donate-an donate-button">DONATE</a>
+            </div>
+          </div>
         </div>
 
-         <div class="box-back">
-          <a href="#" class="close-box-details">X</a>
-          <h5>Text here</h5>
-          <h6>Text Here</h6>
-          <a href="profile-turtles.html" class="button-donate-an donate-button">DONATE</a>
-        </div>
-      </div>
+      
+        <div class="community">
+          <div class="medium-3 small-12 columns charity-box">
+        
+            <div class="box-front">
+              <img src="images/ch-somalia.jpg">
+              <img class="img-icon-sm" src="images/icon-community-2x-color.png" width="40px">
+              <h5>Save the Turtles</h5>
+              <h6>Boca Raton, FL</h6>
+            </div>
 
-     <div class="medium-3 small-12 columns charity-box">
-        <div class="box-front">
-          <img src="images/ch-library.jpg">
-          <img class="img-icon-sm" src="images/icon-education-2x-color.png" width="40px">
-          <h5>Save the Turtles</h5>
-          <h6>Boca Raton, FL</h6>
+            <div class="box-back">
+              <a href="#" class="close-box-details">X</a>
+              <h5>Text here</h5>
+              <h6>Text Here</h6>
+              <a href="profile-turtles.html" class="button-donate-an donate-button">DONATE</a>
+            </div>
+          </div>
         </div>
+  
+   
+        <div class="environment">
+          <div class="medium-3 small-12 columns charity-box">
+        
+            <div class="box-front">
+              <img src="images/ch-trees.jpg">
+              <img class="img-icon-sm" src="images/icon-environment-2x-color.png" width="40px">
+              <h5>Save the Turtles</h5>
+              <h6>Boca Raton, FL</h6>
+            </div>
 
-         <div class="box-back">
-          <a href="#" class="close-box-details">X</a>
-          <h5>Text here</h5>
-          <h6>Text Here</h6>
-          <a href="profile-turtles.html" class="button-donate-an donate-button">DONATE</a>
-        </div>
-      </div>
-
-    <div class="medium-3 small-12 columns charity-box">
-        <div class="box-front">
-          <img src="images/ch-fido.jpg">
-          <img class="img-icon-sm" src="images/icon-animals-2x-color.png" width="40px">
-          <h5>Save the Turtles</h5>
-          <h6>Boca Raton, FL</h6>
-        </div>
-
-         <div class="box-back">
-          <a href="#" class="close-box-details">X</a>
-          <h5>Text here</h5>
-          <h6>Text Here</h6>
-          <a href="profile-turtles.html" class="button-donate-an donate-button">DONATE</a>
-        </div>
-      </div>
-
-      <div class="medium-3 small-12 columns charity-box">
-        <div class="box-front">
-          <img src="images/ch-trees.jpg">
-          <img class="img-icon-sm" src="images/icon-environment-2x-color.png" width="40px">
-          <h5>Save the Turtles</h5>
-          <h6>Boca Raton, FL</h6>
+            <div class="box-back">
+              <a href="#" class="close-box-details">X</a>
+              <h5>Text here</h5>
+              <h6>Text Here</h6>
+              <a href="profile-turtles.html" class="button-donate-an donate-button">DONATE</a>
+            </div>
+          </div>
         </div>
 
-         <div class="box-back">
-          <a href="#" class="close-box-details">X</a>
-          <h5>Text here</h5>
-          <h6>Text Here</h6>
-          <a href="profile-turtles.html" class="button-donate-an donate-button">DONATE</a>
-        </div>
-      </div>
+      
+        <div class="education">
+          <div class="medium-3 small-12 columns charity-box">
+        
+            <div class="box-front">
+              <img src="images/ch-library.jpg">
+              <img class="img-icon-sm" src="images/icon-education-2x-color.png" width="40px">
+              <h5>Save the Turtles</h5>
+              <h6>Boca Raton, FL</h6>
+            </div>
 
-    </div>
+            <div class="box-back">
+              <a href="#" class="close-box-details">X</a>
+              <h5>Text here</h5>
+              <h6>Text Here</h6>
+              <a href="profile-turtles.html" class="button-donate-an donate-button">DONATE</a>
+            </div>
+          </div>
+        </div>
+
+      
+        <div class="animals">
+          <div class="medium-3 small-12 columns charity-box">
+        
+            <div class="box-front">
+              <img src="images/ch-fido.jpg">
+              <img class="img-icon-sm" src="images/icon-animals-2x-color.png" width="40px">
+              <h5>Save the Turtles</h5>
+              <h6>Boca Raton, FL</h6>
+            </div>
+
+            <div class="box-back">
+              <a href="#" class="close-box-details">X</a>
+              <h5>Text here</h5>
+              <h6>Text Here</h6>
+              <a href="profile-turtles.html" class="button-donate-an donate-button">DONATE</a>
+            </div>
+          </div>
+        </div>
+
+      
+        <div class="community">
+          <div class="medium-3 small-12 columns charity-box">
+        
+            <div class="box-front">
+              <img src="images/ch-kitchen.jpg">
+              <img class="img-icon-sm" src="images/icon-community-2x-color.png" width="40px">
+              <h5>Save the Turtles</h5>
+              <h6>Boca Raton, FL</h6>
+            </div>
+
+            <div class="box-back">
+              <a href="#" class="close-box-details">X</a>
+              <h5>Text here</h5>
+              <h6>Text Here</h6>
+              <a href="profile-turtles.html" class="button-donate-an donate-button">DONATE</a>
+            </div>
+          </div>
+        </div>
     
+    </div>
   </section>
 
     <footer>
