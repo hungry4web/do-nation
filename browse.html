@@ -9,33 +9,6 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
 
     <script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-
-<script type="text/javascript">
-$(document).ready(function() {
-  $('#filterOptions li a').click(function() {
-    // fetch the class of the clicked item
-    var ourClass = $(this).attr('class');
-    
-    // reset the active class on all the buttons
-    $('#filterOptions li').removeClass('active');
-    // update the active state on our clicked button
-    $(this).parent().addClass('active');
-    
-    if(ourClass == 'all') {
-      // show all our items
-      $('#ourHolder').children('div.item').show();  
-    }
-    else {
-      // hide all elements that don't share ourClass
-      $('#ourHolder').children('div:not(.' + ourClass + ')').hide();
-      // show all elements that do share ourClass
-      $('#ourHolder').children('div.' + ourClass).show();
-    }
-    return false;
-  });
-});
-</script>
-
 </head>
 
 <body>
@@ -272,22 +245,54 @@ $(document).ready(function() {
 
     <script>
       $(function(e){
+
+        <!-- Flip Card -->
         e.preventDefault;
         var $box_front = $('.box-front');
             $box_back = $('.box-back');
             $close_button = $('.close-box-details');
           
-          $($box_front).on('click', function(e){
+        $($box_front).on('click', function(e){
           e.preventDefault();
           $(this).hide().removeClass('animated flip');
-          $($box_back).show().addClass('animated flip');
+          $($box_front).removeClass('animated flip');
+          $(this).siblings($box_back).show().addClass('animated flip');
         });
 
         $($close_button).on('click', function(e){
           e.preventDefault();
-          $($box_back).hide().removeClass('animated flip');
-          $($box_front).show().addClass('animated flip');
+          $(this).parent($box_back).hide().removeClass('animated flip');
+          $(this).parent($box_back).siblings($box_front).show().addClass('animated flip');
         });
+
+        <!-- Sort Cards -->
+        $(document).ready(function() {
+          $('#filterOptions li a').click(function() {
+            // fetch the class of the clicked item
+            var ourClass = $(this).attr('class');
+            
+            $('body').find('.box-back').removeClass('animated flip');
+            $('body').find('.box-front').removeClass('animated flip');
+            
+            // reset the active class on all the buttons
+            $('#filterOptions li').removeClass('active');
+            // update the active state on our clicked button
+            $(this).parent().addClass('active');
+            
+            if(ourClass == 'all') {
+              // show all our items
+              $('#ourHolder').children('div.item').show();  
+            }
+            else {
+              // hide all elements that don't share ourClass
+              $('#ourHolder').children('div:not(.' + ourClass + ')').hide();
+              // show all elements that do share ourClass
+              $('#ourHolder').children('div.' + ourClass).show();
+            }
+            return false;
+          });
+        });
+
       });
     </script>
     
