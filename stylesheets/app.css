@@ -13199,6 +13199,25 @@ input[type=password] {
   padding: 5px;
 }
 
+/* line 82, ../scss/_hp-content.scss */
+.signin-form {
+  background-color: #b2d23c;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+}
+
+/* line 91, ../scss/_hp-content.scss */
+input[type=text],
+input[type=email],
+input[type=password] {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 5px;
+}
+
 /* line 1, ../scss/_browse-content.scss */
 .browse-main {
   background: #f1912a url(../images/browse-main-photo.jpg) center center no-repeat;
@@ -13321,43 +13340,42 @@ h6 {
 
 /* line 138, ../scss/_browse-content.scss */
 ul#filterOptions {
-  height: 52px;
-  margin: 30px 0;
+  height: 75px;
+  margin: 0;
   overflow: hidden;
   width: 802px;
 }
 
 /* line 145, ../scss/_browse-content.scss */
 ul#filterOptions li {
-  float: left;
-  height: 52px;
+  float: right;
+  height: 75px;
   margin-right: 2px;
 }
 
 /* line 151, ../scss/_browse-content.scss */
 ul#filterOptions li a {
-  height: 50px;
-  padding: 0 20px;
-  border: 1px solid #999;
-  background: #cfcfcf;
+  height: 75px;
+  padding: 0 10px;
   color: #fff;
   font-weight: bold;
-  line-height: 50px;
   text-decoration: none;
   display: block;
 }
 
-/* line 163, ../scss/_browse-content.scss */
+/* line 160, ../scss/_browse-content.scss */
 ul#filterOptions li a:hover {
-  background: #c9c9c9;
+  text-decoration: none;
+  border-bottom: 0px;
 }
 
-/* line 167, ../scss/_browse-content.scss */
+/* line 165, ../scss/_browse-content.scss */
 ul#filterOptions li.active a {
-  background: #999;
+  text-decoration: none;
+  border-bottom: 0px;
 }
 
-/* line 172, ../scss/_browse-content.scss */
+/* line 171, ../scss/_browse-content.scss */
 #ourHolder div.item {
   float: left;
   height: 200px;
@@ -13365,7 +13383,7 @@ ul#filterOptions li.active a {
   width: 200px;
 }
 
-/* line 179, ../scss/_browse-content.scss */
+/* line 178, ../scss/_browse-content.scss */
 #ourHolder div.item h3 {
   font-size: 16px;
   line-height: 20px;
@@ -13400,47 +13418,53 @@ ul#filterOptions li.active a {
 }
 
 /* line 24, ../scss/_profile-content.scss */
+ul.profile-text {
+  list-style-type: square;
+  color: #fff;
+}
+
+/* line 30, ../scss/_profile-content.scss */
 .profile-text {
   color: #fff;
 }
 
-/* line 28, ../scss/_profile-content.scss */
+/* line 34, ../scss/_profile-content.scss */
 .img-rounded-profile {
   border-radius: 0 10px 10px 0;
   float: left;
 }
 
-/* line 33, ../scss/_profile-content.scss */
+/* line 39, ../scss/_profile-content.scss */
 .stats-subhead-profile {
   color: #777777;
   text-align: center;
 }
 
-/* line 39, ../scss/_profile-content.scss */
+/* line 45, ../scss/_profile-content.scss */
 .subhead-profile {
   color: #777777;
 }
 
-/* line 44, ../scss/_profile-content.scss */
+/* line 50, ../scss/_profile-content.scss */
 .comments-box {
   background-color: #ddd;
   margin-bottom: 30px;
   padding: 30px 0;
 }
 
-/* line 51, ../scss/_profile-content.scss */
+/* line 57, ../scss/_profile-content.scss */
 .comments-profiles {
   margin: 30px;
 }
 
-/* line 56, ../scss/_profile-content.scss */
+/* line 62, ../scss/_profile-content.scss */
 .comments-box {
   background-color: #ddd;
   margin-bottom: 30px;
   padding: 30px 0;
 }
 
-/* line 63, ../scss/_profile-content.scss */
+/* line 69, ../scss/_profile-content.scss */
 .donate-form-an {
   background-color: #f7d43a;
   border-radius: 10px;
@@ -13448,7 +13472,7 @@ ul#filterOptions li.active a {
   text-align: center;
 }
 
-/* line 70, ../scss/_profile-content.scss */
+/* line 76, ../scss/_profile-content.scss */
 .form-text-line {
   display: inline-block;
   text-align: left;

@@ -21,9 +21,13 @@
     text-align: left;
 }
 
-.profile-text {
-  color:#fff;
+ul.profile-text {
+    list-style-type: square;
+    color: #fff;
 }
+
+
+
 
 .img-rounded-profile {
   border-radius: 0 10px 10px 0;

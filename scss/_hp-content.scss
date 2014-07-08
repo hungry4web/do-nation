@@ -78,3 +78,22 @@ input[type=password] {
     padding: 5px;
    
 }
+
+.signin-form {
+  background-color: $third-color;
+  border-radius: $global-radius;
+  padding:30px;
+  text-align:center; 
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    border: 1px solid #ddd;
+    border-radius: $global-radius;
+    font-size: 16px;
+    
+    margin-top: 20px;
+    padding: 5px;
+   
+}

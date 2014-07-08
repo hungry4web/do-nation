@@ -12,20 +12,38 @@
 </head>
 
 <body>
-  
+
+
+<!--HEADER NAV-->  
   <header>
     <div class="row">
       <nav class="top-bar">
         <a href="index.html"><img src="images/do-nation-logo-main-2x.png" width="301px"></a>
           <ul class="inline-list right">
             <li><a href="browse.html">BROWSE NEEDS</a></li>
-            <li><a href="#">SIGN UP</a></li>
+            <li>
+
+            <a href="#" data-reveal-id="myModal">SIGN UP</a>
+            <div id="myModal" class="reveal-modal" data-reveal>
+              <div class="join-form">
+                <h2>SIGN UP</h2>
+                  <form action="" >
+                    <input placeholder="Full Name" type="text"> 
+                    <input placeholder="Email Address" type="email"> 
+                    <input placeholder="Password" type="password"> 
+                    <input placeholder="Re-Enter Password" type="password"> 
+                     <a href="#" class="button-join">Join The Nation</a>
+                  </form>
+              </div>
+          <a class="close-reveal-modal">&#215;</a></li>
             <li><a href="#">SIGN IN</a></li>
           </ul>
       </nav>
     </div>
   </header>
 
+
+<!--MAIN PHOTO INFO--> 
   <section class="browse-main">
     <div class="row">
       <div class="small-12 columns">
@@ -35,6 +53,7 @@
   </section>
 
 
+<!--STATS BAR--> 
   <section class="stats">
     <div class="row">
 
@@ -50,23 +69,25 @@
 
       <div class="medium-8 small-12 columns">
         <ul id="filterOptions">
-          <li class="filter-active"><a href="#" class="all">All</a></li>
+          <!--<li class="filter-active"><a href="#" class="all">All</a></li>-->
           <li><a class="community" href="#">
-            <img class="img-icon-sm" src="images/icon-community-2x.png" width="75px"></a></li>
+            <img class="community-rollover" src="images/icon-community-2x.png" width="75px"></a></li>
           <li><a class="environment" href="#">
-            <img class="img-icon-sm" src="images/icon-environment-2x.png" width="75px"></a></li>
+            <img class="environment-rollover" src="images/icon-environment-2x.png" width="75px"></a></li>
           <li><a class="education" href="#">
-            <img class="img-icon-sm" src="images/icon-education-2x.png" width="75px"></a></li>
+            <img class="education-rollover" src="images/icon-education-2x.png" width="75px"></a></li>
           <li><a class="animals" href="#">
-            <img class="img-icon-sm" src="images/icon-animals-2x.png" width="75px"></a></li>
+            <img class="animals-rollover" src="images/icon-animals-2x.png" width="75px"></a></li>
           <li><a class="health" href="#">
-            <img class="img-icon-sm" src="images/icon-health-2x.png" width="75px"></a></li>
+            <img class="health-rollover" src="images/icon-health-2x.png" width="75px"></a></li>
         </ul>
       </div>
 
     </div>
   </section>
 
+
+  <!--TILES--> 
   <section>
     <div id="ourHolder" class="row">
       
@@ -82,8 +103,8 @@
 
             <div class="box-back">
               <a href="#" class="close-box-details">X</a>
-              <h5>Text here</h5>
-              <h6>Text Here</h6>
+              <h5>Help Us Save The Turtles</h5>
+              <h6>With your money we can save the sea turtles who came in to the rehabilitation center each year for care.</h6>
               <a href="profile-turtles.html" class="button-donate-an donate-button">DONATE</a>
             </div>
           </div>
@@ -96,14 +117,14 @@
             <div class="box-front">
               <img src="images/ch-breast.jpg">
               <img class="img-icon-sm" src="images/icon-health-2x-color.png" width="40px">
-              <h5>Save the Turtles</h5>
-              <h6>Boca Raton, FL</h6>
+              <h5>Brenda's Breast Walk</h5>
+              <h6>Chippewa, NH</h6>
             </div>
 
             <div class="box-back">
               <a href="#" class="close-box-details">X</a>
-              <h5>Text here</h5>
-              <h6>Text Here</h6>
+              <h5>Walk with us</h5>
+              <h6>Honor Brenda and remember those we have lost and support those who still struggle.</h6>
               <a href="profile-turtles.html" class="button-donate-an donate-button">DONATE</a>
             </div>
           </div>
@@ -116,14 +137,14 @@
             <div class="box-front">
               <img src="images/ch-nepal.jpg">
               <img class="img-icon-sm" src="images/icon-community-2x-color.png" width="40px">
-              <h5>Save the Turtles</h5>
-              <h6>Boca Raton, FL</h6>
+              <h5>Friends of Nepal</h5>
+              <h6>Philadelphia, PA</h6>
             </div>
 
             <div class="box-back">
               <a href="#" class="close-box-details">X</a>
-              <h5>Text here</h5>
-              <h6>Text Here</h6>
+              <h5>Your Money Helps Communities</h5>
+              <h6>We have supplied food, shelter and electicity over the years with monies donated. </h6>
               <a href="profile-turtles.html" class="button-donate-an donate-button">DONATE</a>
             </div>
           </div>
@@ -136,14 +157,14 @@
             <div class="box-front">
               <img src="images/ch-somalia.jpg">
               <img class="img-icon-sm" src="images/icon-community-2x-color.png" width="40px">
-              <h5>Save the Turtles</h5>
-              <h6>Boca Raton, FL</h6>
+              <h5>Somalia Children Fund</h5>
+              <h6>Dallas, TX</h6>
             </div>
 
             <div class="box-back">
               <a href="#" class="close-box-details">X</a>
-              <h5>Text here</h5>
-              <h6>Text Here</h6>
+              <h5>Funding for Medical Trip</h5>
+              <h6>Help raise money for health and medical trip for area healthcare workers to travel and donate services to help these children.</h6>
               <a href="profile-turtles.html" class="button-donate-an donate-button">DONATE</a>
             </div>
           </div>
@@ -156,14 +177,14 @@
             <div class="box-front">
               <img src="images/ch-trees.jpg">
               <img class="img-icon-sm" src="images/icon-environment-2x-color.png" width="40px">
-              <h5>Save the Turtles</h5>
-              <h6>Boca Raton, FL</h6>
+              <h5>Plant A Tree Day</h5>
+              <h6>Seattle, WA</h6>
             </div>
 
             <div class="box-back">
               <a href="#" class="close-box-details">X</a>
-              <h5>Text here</h5>
-              <h6>Text Here</h6>
+              <h5>Money for Trees</h5>
+              <h6>One tree planted on Earth Day for each donation</h6>
               <a href="profile-turtles.html" class="button-donate-an donate-button">DONATE</a>
             </div>
           </div>
@@ -176,14 +197,14 @@
             <div class="box-front">
               <img src="images/ch-library.jpg">
               <img class="img-icon-sm" src="images/icon-education-2x-color.png" width="40px">
-              <h5>Save the Turtles</h5>
-              <h6>Boca Raton, FL</h6>
+              <h5>Stock the New Library</h5>
+              <h6>Warrenton, VA</h6>
             </div>
 
             <div class="box-back">
               <a href="#" class="close-box-details">X</a>
-              <h5>Text here</h5>
-              <h6>Text Here</h6>
+              <h5>Library Needs Books</h5>
+              <h6>Help stock the new library and raise funds for new books.</h6>
               <a href="profile-turtles.html" class="button-donate-an donate-button">DONATE</a>
             </div>
           </div>
@@ -196,14 +217,14 @@
             <div class="box-front">
               <img src="images/ch-fido.jpg">
               <img class="img-icon-sm" src="images/icon-animals-2x-color.png" width="40px">
-              <h5>Save the Turtles</h5>
-              <h6>Boca Raton, FL</h6>
+              <h5>SPCA of Nevada</h5>
+              <h6>Las Vegas, NV</h6>
             </div>
 
             <div class="box-back">
               <a href="#" class="close-box-details">X</a>
-              <h5>Text here</h5>
-              <h6>Text Here</h6>
+              <h5>Spay and Neuter</h5>
+              <h6>Help raise money for the local SPCA</h6>
               <a href="profile-turtles.html" class="button-donate-an donate-button">DONATE</a>
             </div>
           </div>
@@ -216,14 +237,14 @@
             <div class="box-front">
               <img src="images/ch-kitchen.jpg">
               <img class="img-icon-sm" src="images/icon-community-2x-color.png" width="40px">
-              <h5>Save the Turtles</h5>
-              <h6>Boca Raton, FL</h6>
+              <h5>Community Kitchen</h5>
+              <h6>Baltimore, MD</h6>
             </div>
 
             <div class="box-back">
               <a href="#" class="close-box-details">X</a>
-              <h5>Text here</h5>
-              <h6>Text Here</h6>
+              <h5>Thanksgiving Meals</h5>
+              <h6>Buy a meal for a family for the holidays.</h6>
               <a href="profile-turtles.html" class="button-donate-an donate-button">DONATE</a>
             </div>
           </div>
